@@ -10,7 +10,7 @@ export default function Header() {
             <header className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur border-b border-slate-100">
                 <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 py-3 sm:py-5 lg:py-8">
                     <div className="flex items-center justify-between">
-                        {/* LEFT: Logo */}
+                        {/* Logo */}
                         <div className="flex items-center gap-4 sm:gap-[40px] h-[42px]">
                             <img
                                 src="/logo.png"
@@ -20,7 +20,6 @@ export default function Header() {
                             <div className="hidden sm:block w-px h-[25px] bg-[#E4E7EC]" />
                         </div>
 
-                        {/* CENTER: Desktop menu */}
                         <nav className="hidden lg:flex items-center h-[24px] gap-[40px]">
                             <a href="#" className="menu-item">Эхлэл</a>
                             <a href="#" className="menu-item">Бүтээгдэхүүн</a>
@@ -29,9 +28,9 @@ export default function Header() {
                             <a href="#" className="menu-item">Холбоо барих</a>
                         </nav>
 
-                        {/* RIGHT: CTA + Hamburger */}
+                        {/*  Hamburger */}
                         <div className="flex items-center gap-2 sm:gap-3">
-                            {/* CTA (өмнөхөөрөө) */}
+                          
                             <button
                                 className="
                                 group flex 
@@ -107,7 +106,6 @@ export default function Header() {
                             aria-label="Close menu"
                             onClick={() => setOpen(false)}
                         >
-                            {/* X icon */}
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                                 <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -116,7 +114,6 @@ export default function Header() {
                     </div>
                 </div>
 
-                {/* Centered menu items */}
                 <div className="px-4 py-10">
                     <nav className="flex flex-col items-center gap-6">
                         <a href="#" className="menu-item" onClick={() => setOpen(false)}>Эхлэл</a>
@@ -126,11 +123,7 @@ export default function Header() {
                         <a href="#" className="menu-item" onClick={() => setOpen(false)}>Холбоо барих</a>
                     </nav>
                 </div>
-
-                {/* (Үнийн санал товч энд байхгүй — таны хүсэлтээр) */}
             </div>
-
-            {/* Optional: dark overlay behind full-screen menu */}
             <div
                 className={`
           fixed inset-0 z-[55] lg:hidden
