@@ -12,6 +12,8 @@
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@fortawesome/react-fontawesome": "^3.1.1",
+    "@heroicons/react": "^2.2.0",
+    "lucide-react": "^0.562.0",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"
@@ -23,7 +25,14 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
   }
 }
