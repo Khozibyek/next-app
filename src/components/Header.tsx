@@ -20,7 +20,6 @@ export default function Header() {
               />
               <div className="hidden h-[25px] w-px bg-[#E4E7EC] sm:block" />
             </div>
-
             <nav
               className={`fixed inset-x-0 top-0 z-[60] bg-white transition-transform duration-300 ease-out lg:static lg:z-auto lg:flex lg:translate-y-0 lg:bg-transparent ${open ? "translate-y-0" : "-translate-y-full"} `}
             >
@@ -57,19 +56,12 @@ export default function Header() {
             <div className="flex items-center gap-2 sm:gap-3">
               <button className="group /* mobile */ /* desktop */ inline-flex h-6 items-center justify-center gap-1 rounded-md bg-[linear-gradient(90deg,#AE24FE_0%,#662AED_49.3%,#0026BF_100%)] px-2 text-[12px] font-medium text-white transition-all hover:scale-[1.03] lg:h-[42px] lg:gap-2 lg:rounded-full lg:px-[16px] lg:text-[16px]">
                 <span>Үнийн санал</span>
-<ArrowRight
-  className="
-    hidden lg:inline-block
-    h-5 w-5
-    transition-transform duration-300
-    group-hover:translate-x-1
-  "
-  strokeWidth={1.25}
-/>
-
+                <ArrowRight
+                  className="hidden h-5 w-5 transition-transform duration-300 group-hover:translate-x-1 lg:inline-block"
+                  strokeWidth={1.25}
+                />
               </button>
 
-          
               <button
                 onClick={() => setOpen(true)}
                 aria-label="Open menu"
