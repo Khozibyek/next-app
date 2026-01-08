@@ -60,7 +60,6 @@ export default function Home() {
     lg:px-[16px] lg:text-[16px] lg:gap-[10px]
   "
 >
-  {/* Text – always visible */}
   <span>Уулзалт товлох</span>
 
  <ArrowRight
@@ -78,7 +77,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Scroll down (desktop only) */}
             <a
               href="#modules"
               aria-label="Scroll down"
@@ -112,14 +110,12 @@ export default function Home() {
           </div>
 
           <div className="mt-[50px] flex w-full max-w-[1106px] flex-col gap-[32px]">
-            {/* ===== Title + Description ===== */}
             <div className="flex w-full max-w-[1106px] flex-col gap-[24px] px-4 sm:px-6 lg:px-0">
               {/* Гарчиг */}
               <h2 className="text-center font-['Roboto'] text-[20px] leading-[34px] font-semibold text-[#282933] sm:text-left lg:text-[36px] lg:leading-[44px]">
                 Яагаад ERP системтэй байх хэрэгтэй вэ?
               </h2>
 
-              {/* Description */}
               <p className="text-justify font-['Roboto'] text-[16px] leading-[26px] font-normal break-words text-[#667085] lg:text-[16px] lg:leading-[28px]">
                 Орчин үеийн бизнесийн зах зээл хурдан хувьсан өөрчлөгдөж,
                 байгууллагууд олон төрлийн үйл ажиллагаагаа, өгөгдлийг нэгэн дор
@@ -130,13 +126,11 @@ export default function Home() {
                 олгодог.
               </p>
 
-              {/* Divider */}
               <div className="w-full border-t border-[#D0D5DD]" />
             </div>
 
-            {/* ===== Cards ===== */}
             <div className="flex w-full flex-col gap-[24px]">
-              {/* Row 1 */}
+   
               <div className="flex w-full flex-col gap-[24px] lg:flex-row">
                 {/* Card 1 */}
                 <div className="w-full rounded-[30px] border border-[#E4E7EC] bg-white p-[24px] lg:w-1/2">
@@ -238,7 +232,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Card 5 – Full width */}
+              {/* Card 5  */}
               <div className="w-full rounded-[30px] border border-[#E4E7EC] bg-white p-[24px]">
                 <div className="flex w-full flex-col gap-[14px]">
                   <div className="flex h-[60px] w-[60px] items-center justify-center rounded-[40px] border-[5px] border-[#F1F3F5] bg-[#0026BF]">
