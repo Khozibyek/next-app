@@ -12,7 +12,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* Dark mode байсан ч цагаан байлгах */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
