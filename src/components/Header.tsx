@@ -21,11 +21,10 @@ export default function Header() {
               <div className="hidden h-[25px] w-px bg-[#E4E7EC] sm:block" />
             </div>
 
-            {/* Menu (desktop / mobile shared) */}
             <nav
               className={`fixed inset-x-0 top-0 z-[60] bg-white transition-transform duration-300 ease-out lg:static lg:z-auto lg:flex lg:translate-y-0 lg:bg-transparent ${open ? "translate-y-0" : "-translate-y-full"} `}
             >
-              {/* Mobile header */}
+
               <div className="flex items-center justify-between border-b px-4 py-4 lg:hidden">
                 <img src="/logo.png" alt="iFinance" className="h-9 w-[110px]" />
                 <button
@@ -36,7 +35,6 @@ export default function Header() {
                 </button>
               </div>
 
-              {/* Links */}
               <div className="flex flex-col items-center gap-6 py-10 lg:flex-row lg:gap-8 lg:py-0">
                 <a href="#" className="menu-item">
                   Эхлэл
@@ -56,10 +54,8 @@ export default function Header() {
               </div>
             </nav>
 
-            {/* Right side */}
             <div className="flex items-center gap-2 sm:gap-3">
               <button className="group /* mobile */ /* desktop */ inline-flex h-6 items-center justify-center gap-1 rounded-md bg-[linear-gradient(90deg,#AE24FE_0%,#662AED_49.3%,#0026BF_100%)] px-2 text-[12px] font-medium text-white transition-all hover:scale-[1.03] lg:h-[42px] lg:gap-2 lg:rounded-full lg:px-[16px] lg:text-[16px]">
-                {/* Text – always visible */}
                 <span>Үнийн санал</span>
 <ArrowRight
   className="
@@ -73,7 +69,7 @@ export default function Header() {
 
               </button>
 
-              {/* Burger */}
+          
               <button
                 onClick={() => setOpen(true)}
                 aria-label="Open menu"
@@ -86,7 +82,6 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Overlay */}
       <div
         onClick={() => setOpen(false)}
         className={`fixed inset-0 z-[55] bg-black/0 transition-opacity lg:hidden ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
